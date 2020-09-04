@@ -7,12 +7,6 @@ Esse é um plugin php voltado para utilidades básicas ao manipular serviços da
 - Converter valores em Reais brasileiros (R$) em Euro, Dólar e Libra.
 - Validar um CEP.
 
-### Aviso de licensa
-
-O plugin é open-source mas não é gratuito. O uso não autorizado deste ira resultar em processo judicial por quebra de direitos autorais
-
-Para comprar o plugin, visite os seguintes links:
-
 ### Pré-requisitos
 
 Em sistemas Windows as bibliotecas já vêm em qualquer pack de servidor embutido (XAMPP, WAMPP, etc).
@@ -60,4 +54,4 @@ O uso das funções está dentro da pasta __exemplos/__, com arquivos separados 
 
 ## Licença
 
-Esse projeto é de propriedade intelectual privada da autora, seu uso sem a compra nos links indicados nesse arquivo será considerado crime - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+Esse projeto pode ser usado por qualquer um, desde que atribua os devidos direitos autorais e forneça o link para esse repositório.
