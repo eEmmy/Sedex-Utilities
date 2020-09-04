@@ -41,8 +41,6 @@ __Importante:__ o plugin foi feito para ter compatibilidade universal, tanto em 
 
 ### Instalação
 
-Há duas formas de baixar o SedexUtilities.
-
 #### Git
 
 Baixa a versão do github. Precisa incluir o arquivo __src/SedexUtilities.php__ toda vez que for usar o plugin.
@@ -50,14 +48,6 @@ Baixa a versão do github. Precisa incluir o arquivo __src/SedexUtilities.php__ 
 
 ```
 git clone https://github.com/eEmmy/Sedex-Utilities.git
-```
-
-#### Composer
-
-Baixa a versão do composer. Ao incluir o arquivo de autoload, ou já ter ele carregado por algum framework, para usar apenas importe o namespace Plugins\SedexUtilites.
-
-```
-composer require SedexUtilities
 ```
 
 ## Exemplos
