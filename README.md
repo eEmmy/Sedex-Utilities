@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SedexUtilities
 
 Esse é um plugin php voltado para utilidades básicas ao manipular serviços da Empresa Brasileira de Correiose Telégrados brasileira. Nele contém as seguintes funções:
@@ -50,7 +49,7 @@ Baixa a versão do github. Precisa incluir o arquivo __src/SedexUtilities.php__ 
 
 
 ```
-git clone git://github.com/schacon/grit.git
+git clone https://github.com/eEmmy/Sedex-Utilities.git
 ```
 
 #### Composer
@@ -69,10 +68,6 @@ O uso das funções está dentro da pasta __exemplos/__, com arquivos separados 
 
 * __Emmy Gomes__ - *Responsavel por todo o projeto* - [eEmmy](https://github.com/eEmmy)
 
-## License
+## Licença
 
 Esse projeto é de propriedade intelectual privada da autora, seu uso sem a compra nos links indicados nesse arquivo será considerado crime - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
-=======
-# Sedex-Utilities
-Biblioteca com todas as funções relacionadas a serviços dos Correios 
->>>>>>> 12e347d4a57920e06073cbfaa2a1e545b828ac08
