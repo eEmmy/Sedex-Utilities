@@ -48,10 +48,6 @@ git clone https://github.com/eEmmy/Sedex-Utilities.git
 
 O uso das funções está dentro da pasta __exemplos/__, com arquivos separados para cada função
 
-## Autores
+## Autore
 
 * __Emmy Gomes__ - *Responsavel por todo o projeto* - [eEmmy](https://github.com/eEmmy)
-
-## Licença
-
-Esse projeto pode ser usado por qualquer um, desde que atribua os devidos direitos autorais e forneça o link para esse repositório.
