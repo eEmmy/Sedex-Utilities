@@ -1,68 +1,88 @@
 <?php
-/**
- * Arquivo de configurações do plugin Correio-Utilities.
- *
- * @author Emmy Gomes <aou-emmy@outlook.com>
- * @version 1.0
- */
 
-/* --- Configurações do usuario/empresa --- */
+/*
+|--------------------------------------------------------------------------------------
+| CEP de origem.
+|--------------------------------------------------------------------------------------
+|
+| Aqui você deve definir qual o cep de origem da entrega. O valor pode ou não ser 
+| passado com um hífen (-)
+|
+*/
 
-// Cep de origem
-$cep_origem = '01310-000';
+$GLOBALS["origem"] = "01431-010";
 
-// Formato padrão que será usado nas embalagens
-// As opções disponiveis são: 'caixa' e 'rolo'/'prisma'
-$formato_embalagem_padrao = 'caixa';
+/*
+|--------------------------------------------------------------------------------------
+| Formato da embalagem.
+|--------------------------------------------------------------------------------------
+|
+| Aqui você deve definir qual o formato da embalagem a ser usada para o envio.
+| As opções são:
+|
+| 1 = caixa/pacote
+| 2 = rolo/prisma
+|
+*/
 
-// Informa se o usuario/empresa tem contrato com o correio
-// As opções disponiveis são true (sim) ou false (não)
-// Caso não tenha ou não saiba do que se trata apenas deixe as configurações padrões
-$contrato = false;
+$GLOBALS["formatoEmbalagem"] = 1;
 
-// Caso tenha contrato, passe as informações aqui
-$informacoes_contrato = array(
-	'codigo_empresa' => 'codigo da empresa aqui',
-	'senha_empresa' => 'senha da empresa aqui'
-);
+/*
+|--------------------------------------------------------------------------------------
+| Contrato.
+|--------------------------------------------------------------------------------------
+|
+| Informa se existe um contrato do remetente com os Correios.
+| As opções são: 
+|
+| 0 = Não existe um contrato
+| 1 = Existe um contrato
+|
+*/
 
-// Informa os serviços de entrega que o usuario/empresa deseja usar do correio
-// Use 0 para não usar o serviço e 1 para usa-lo
-// Não altere os códigos entre aspas. Isso gerara um erro no programa
-// As limitações do correio limitam a apenas um serviço
-$servicos_disponiveis = array(
-	// Sedex comum
-	'sedex' => ['40010' => 1],
-	// Sedex 10
-	'sedex10' => ['40215' => 0],
-	// Sedex Hoje
-	'sedexHoje' => ['40290' => 0],
-	// PAC
-	'pac-1' => ['41106' => 0],
-	'pac-2' => ['41211' => 0],
-	// e-Sedex
-	'esedex-1' => ['81019' => 0],
-	'esedex-2' => ['81027' => 0],
-	'esedex-3' => ['81035' => 0],
-);
+$GLOBALS["contrato"] = 0;
 
+/*
+|--------------------------------------------------------------------------------------
+| Configurações de contrato.
+|--------------------------------------------------------------------------------------
+|
+| Aqui você deve definir quais as configurações do seu contrato com o correio, caso
+| exista um. Essas opções só serão relevadas caso a opção acima esteja configurada para
+| um (1).
+|
+| As configurações são:
+|
+| [0] = Código disponibilizado pelos Correios para identificação da empresa.
+| [1] = Senha para acesso aos serviços.
+|
+*/
 
-/* --- Configurações do plugin -- */
+$GLOBALS["parametrosContrato"] = [
+	0 => "",
+	1 => ""
+];
 
-// Formato para retorno das consultas
-// Interfere na estrutura do plugin. Só deve ser alterado por programadores e necessita re-escrita do código fonte do programa
-// Padrão é 'xml'
-$retorno_padrao = 'xml';
+/*
+|--------------------------------------------------------------------------------------
+| Serviços.
+|--------------------------------------------------------------------------------------
+|
+| Aqui você deve definir quais os serviços dos Correios que pretende usar. Os que 
+| deverão ser usados devem ser confiugurados como um (1), já os que não serão usados
+| devem ser configurados como zero (0).
+|
+*/
 
-// Define qual moeda apresentar
-// As opções são: 
-	// 'real' (Reais brasileiros), 'dolar' (Dolar estadunidense), 
-	// 'libra' (Libra esterlina), 'euro' (Euro europeu)
-$formato_moeda = 'dolar';
+$GLOBALS["servicos"] = [
+	"sedex" => 1,
+	"sedex10" => 0,
+	"sedexHoje" => 0,
+	"pac1" => 0,
+	"pac2" => 0,
+	"esedex1" => 0,
+	"esedex2" => 0,
+	"esedex3" => 0,
+];
 
-// Define se os ceps de destino serão filtrados no lado do servidor pelo plugin ou já serão passados no formato ideal
-// Caso escolha deixar o plugin filtra-lo, os erros terão de ser tratados por você, o plugin apenas retornara que houve um erro no formato do cep
-// Caso escolha passar o cep já filtrado o formato deve ser 'xxxxxxx', sem o hífen
-// As opções são true (sim) e false (não)
-$filtrar_cep_destino = true;
 ?>

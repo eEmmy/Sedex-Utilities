@@ -1,0 +1,22 @@
+{
+	"name": "eemmy/sedex-utilities",
+	"description": "Biblioteca para consumo da API da Empresa Brasileira de Correios e Telégrafos.",
+	"license": "GPL-2.0-or-later",
+	"support": {
+		"issues": "https://github.com/eEmmy/Sedex-Utilities/issues/",
+		"source": "https://github.com/eEmmy/Sedex-Utilities/"
+	},
+	"author": {
+		"name": "Emmy Gomes",
+		"email": "aou-emmy@outlook.com" 
+	},
+	"require": {
+		"php": "^7.2|^8.0"
+	},
+	"version": "2.0.0",
+	"autoload": {
+		"psr-4": {
+			"SedexUtilities\\": "src/"
+		}
+	}
+}
