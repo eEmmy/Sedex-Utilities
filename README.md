@@ -10,7 +10,7 @@ Essa é uma biblioteca PHP para consumo da API da Empresa Brasileira de Correios
 
 ### Instalação
 
-Inclua ```"sedex-utilities": "2.0.0"``` no require do seu arquivo *composer.json*
+Inclua ```"eemmy/sedex-utilities": "2.0.0"``` no require do seu arquivo *composer.json*
 
 ## Autore
 
